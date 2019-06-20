@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <h1 style="text-align:center" style="font-size: 10px"> תמונת מצב  <button onClick="window.location.reload();"><img height="20px" width="16px" src="img/refesh.png" /></button></h1>
+  <head>
+    <!--title>jquery.rss example</title-->
+    <script src="lib/jquery-1.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+    <script src="src/jquery.rss.js"></script>
+    <script>
+      jQuery(function($) {
+        $("#rss-feeds").rss("http://www.ynet.co.il/Integration/StoryRss1854.xml", {
+          limit: 5,
+          effect: 'slideFastSynced'
+        })
+      })
+    </script>
+    <script>
+        jQuery(function($) {
+          $("#rss-feeds2").rss("http://rotter.net/rss/rotternews.xml", {
+            limit: 5,
+            effect: 'slideFastSynced'
+          })
+        })
+      </script>
+      <script>
+          jQuery(function($) {
+            $("#rss-feeds3").rss("http://rss.walla.co.il/?w=/1/2689/0/@rss.e", {
+              limit: 5,
+              effect: 'slideFastSynced'
+            })
+          })
+        </script>
+         <script>
+            jQuery(function($) {
+              $("#rss-feeds4").rss("http://www.inn.co.il/Rss.aspx", {
+                limit: 5,
+                effect: 'slideFastSynced'
+              })
+            })
+          </script>
+        <script>
+           jQuery(function($) {
+             $("#rss-feeds5").rss("http://www.maariv.co.il/Rss/RssFeedsMivzakiChadashot", {
+               limit: 5,
+               effect: 'slideFastSynced'
+             })
+           })
+         </script>
+          <script>
+             jQuery(function($) {
+               $("#rss-feeds6").rss("http://www.israelhayom.co.il/rss.xml", {
+                 limit: 5,
+                 effect: 'slideFastSynced'
+               })
+             })
+           </script>
+            <script>
+               jQuery(function($) {
+                 $("#rss-feeds7").rss("http://www.one.co.il/cat/coop/xml/rss/newsfeed.aspx", {
+                   limit: 5,
+                   effect: 'slideFastSynced'
+                 })
+               })
+             </script>
+              <script>
+               jQuery(function($) {
+                 $("#rss-feeds8").rss("http://rcs.mako.co.il/rss/31750a2610f26110VgnVCM1000005201000aRCRD.xml", {
+                   limit: 5,
+                   effect: 'slideFastSynced'
+                 })
+               })
+             </script>
+              <script>
+               jQuery(function($) {
+                 $("#rss-feeds9").rss("http://www.globes.co.il/webservice/rss/rssfeeder.asmx/FeederNode?iID=585", {
+                   limit: 5,
+                   effect: 'slideFastSynced'
+                 })
+               })
+             </script>
+              <script>
+               jQuery(function($) {
+                 $("#rss-feeds10").rss("http://www.talniri.co.il/finance/Export/rss_newsfeed.aspx?id=7F92291D-CE18-4420-B5BF-89C3C00FF235&id=7F92291D-CE18-4420-B5BF-89C3C00FF235&type=1", {
+                   limit: 5,
+                   effect: 'slideFastSynced'
+                 })
+               })
+             </script>
+              <script>
+               jQuery(function($) {
+                 $("#rss-feeds11").rss("http://www.haaretz.co.il/cmlink/1.1410478", {
+                   limit: 5,
+                   effect: 'slideFastSynced'
+                 })
+               })
+             </script>
+
+    <style type="text/css">
+      body {
+        font-family: Arial, Verdana, Trebuchet MS, Helvetica, lucida grande, "sans-serif";
+        font-size: 14px;
+      }
+      body > div {
+        margin: 0px auto;
+        width: 100%;
+      }
+      a {
+        color: #37D;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+      }
+      h1 {
+        font-family: Arial, Verdana, Trebuchet MS, Helvetica, lucida grande, "sans-serif";
+        font-size: 20px;
+      }
+      li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-top: 0px dashed #AAA;
+        background-color: #EFEFEF;
+        text-align: right;
+      }
+      li:first-child {
+        border-top: none;
+      }
+      li:nth-child(2n) {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+       <h1  style="text-align:right"><img border="0" src="img/ynet 1.png" /></h1>
+      <div id="rss-feeds"></div>
+
+      <h1  style="text-align:right"><img border="0" src="img/walla.png" /></h1>
+      <div id="rss-feeds3"></div>
+      <h1  style="text-align:right"><img border="0" src="img/7.png" /></h1>
+      <div id="rss-feeds4"></div>
+      <h1  style="text-align:right"><img border="0" src="img/NRGGG.png" /></h1>
+      <div id="rss-feeds5"></div>
+      <h1  style="text-align:right"><img border="0" src="img/ISRAEL HAYOM.png" /></h1>
+      <div id="rss-feeds6"></div>
+      <h1  style="text-align:right"><img border="0" src="img/one.png" /></h1>
+      <div id="rss-feeds7"></div>
+      <h1  style="text-align:right"><img border="0" src="img/MAKO.png" /></h1>
+      <div id="rss-feeds8"></div>
+      <h1  style="text-align:right"><img border="0" src="img/globes.png" /></h1>
+      <div id="rss-feeds9"></div>
+      <h1  style="text-align:right"><img border="0" src="img/talnr.png" /></h1>
+      <div id="rss-feeds10"></div>
+      <h1  style="text-align:right"><img border="0" src="img/haarets.png" /></h1>
+      <div id="rss-feeds11"></div>
+
+      <h1  style="text-align:right"><img border="0" src="img/blank.png" /></h1>
+      <div id="rss-feeds8"></div>
+    </div>
+  </body>
+</html>
